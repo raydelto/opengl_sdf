@@ -3,7 +3,7 @@ in vec2 TexCoord;
 out vec4 FragColor;
 uniform sampler2D sdfTexture;
 uniform vec3 textColor;
-uniform float smoothing = 0.5;
+uniform float smoothing = 0.25;
 
 void main() {
     float distance = texture(sdfTexture, TexCoord).r;
