@@ -15,9 +15,10 @@ Where the function signature is:
 ![Font Test](https://www.raydelto.org/img/font_test.png)
 
 ## Dependencies
-1. glfw3
-2. libfreetype
-3. GLEW (For Linux & Windows Build) ; GLAD (for MacOS builds).
+1. GLM (OpenGL Mathematics)
+2. GLFW3
+3. Freetype
+4. GLEW (For Linux & Windows Build) ; GLAD (for MacOS builds).
 
 ## Build
 
