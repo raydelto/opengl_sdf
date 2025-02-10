@@ -7,7 +7,7 @@ all: bin/main
 
 ifeq ($(UNAME_S),Linux)
 LIBS = -lGL -lGLEW -lglfw -ldl -lfreetype
-INCLUDES=-I ./include
+INCLUDES=-I ./include -I/usr/include/freetype2
 else ifeq ($(UNAME_S),Darwin)
 OBJ += bin/glad.o
 
@@ -26,7 +26,7 @@ LIBS = -lglew32 -lglfw3 -lopengl32 -lgdi32 -lfreetype \
 	   -LC:\msys64\mingw64\lib
 INCLUDES=-IC:\msys64\mingw64\include -IC:\msys64\mingw64\include\freetype2
 
-clean: 
+clean:
 	del bin\*.o
 	del bin\main.exe
 
